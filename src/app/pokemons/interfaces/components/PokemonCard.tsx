@@ -2,7 +2,7 @@ import Link from "next/link";
 import React from "react";
 import { SimplePokemon } from "../../simple-pokemon";
 import Image from "next/image";
-import { IoHeart, IoHeartOutline } from "react-icons/io5";
+import { IoHeartOutline } from "react-icons/io5";
 
 interface Props {
   pokemon: SimplePokemon;
@@ -21,6 +21,7 @@ const PokemonCard = ({ pokemon }: Props) => {
             width={100}
             height={100}
             alt={pokemon.name}
+            priority={false}
           />
           <p className="pt-2 text-lg font-semibold text-gray-50">John Doe</p>
           <p className="text-sm text-gray-100 capitalize">{name}</p>
